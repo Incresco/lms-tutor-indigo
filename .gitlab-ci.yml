@@ -1,6 +1,6 @@
 variables:
     TUTOR_PLUGIN: camped-theme
-    TUTOR_PYPI_PACKAGE: camped-theme
+    TUTOR_PYPI_PACKAGE: tutor-indigo
     TUTOR_BUILD_IMAGE: openedx
     OPENEDX_RELEASE: palm
     GITHUB_REPO: Incresco/lms-tutor-indigo
