@@ -60,11 +60,11 @@ from openedx.core.djangoapps.user_authn.toggles import should_redirect_to_authn_
           % endif
         % endif
         % if should_redirect_to_authn_mfe:
-          <div class="mobile-nav-item hidden-mobile nav-item" style="display: none;">
+          <div class="mobile-nav-item hidden-mobile nav-item d-none">
               <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
           </div>
         % else:
-          <div class="mobile-nav-item hidden-mobile nav-item" style="display: none;">
+          <div class="mobile-nav-item hidden-mobile nav-item d-none">
               <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
           </div>
         % endif
