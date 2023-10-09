@@ -14,20 +14,25 @@
 
 <%block name="content">
 
-<div class="wrapper-content-header wrapper">
+<div class="wrapper-content-header wrapper" style="background: #F5F5F5;">
   <section class="content content-header">
     <header>
-      <h1><span class="wrapper-text-welcome">${_("Welcome to {studio_name}").format(
-          studio_name=settings.STUDIO_NAME
-      )}</span></h1>
-      <p class="tagline">${_("{studio_name} helps manage your online courses, so you can focus on teaching them").format(
-        studio_name=settings.STUDIO_SHORT_NAME
-      )}</p>
+      <h1 style="border: none;">
+        <span class="wrapper-text-welcome" style="color: black;border: none;">Welcome to CampEd</span>
+      </h1>
+      <p class="tagline" style="color: black;">Opening your gates to the new digital campus</p>
+      <div class="w-full text-center mt-8 justify-center" style="margin-top: 40px;">
+        <a href="https://camped.academy/contact/" target="_blank"
+          class="border-2 text-white border-current px-12 p-2 rounded-full mt-4 no-underline "
+          style="padding: 16px;text-decoration: none;font-family: system-ui;background: #006eff;color: #fff;border-radius: 8px;padding-left: 40px;padding-right: 40px;">
+          BOOK A FREE DEMO
+        </a>
+      </div>
     </header>
   </section>
 </div>
 
-<div class="wrapper-content-features wrapper">
+<div class="wrapper-content-features wrapper" style="display: none;">
   <section class="content content-features">
     <header>
       <h2 class="sr">${_("{studio_name}'s Many Features").format(studio_name=settings.STUDIO_SHORT_NAME)}</h2>
@@ -173,7 +178,7 @@
 </div>
 % endif
 
-<div class="content-modal" id="hiw-feature1">
+<div class="content-modal d-none" id="hiw-feature1">
   <h3 class="title">${_("Outlining Your Course")}</h3>
   <figure>
     <img src="${static.url("images/hiw-feature1.png")}" alt="" />
@@ -186,7 +191,7 @@
   </a>
 </div>
 
-<div class="content-modal" id="hiw-feature2">
+<div class="content-modal d-none" id="hiw-feature2">
   <h3 class="title">${_("More than Just Lectures")}</h3>
   <figure>
     <img src="${static.url("images/hiw-feature2.png")}" alt="" />
@@ -199,7 +204,7 @@
   </a>
 </div>
 
-<div class="content-modal" id="hiw-feature3">
+<div class="content-modal d-none" id="hiw-feature3">
   <h3 class="title">${_("Publishing on Date")}</h3>
   <figure>
     <img src="${static.url("images/hiw-feature3.png")}" alt="" />
